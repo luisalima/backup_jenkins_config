@@ -4,7 +4,8 @@
 # http://jenkins-ci.org/content/keeping-your-configuration-and-data-subversion
 # for the inspiration.
 
-source ./common.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $DIR/common.sh
 
 echo_task "copying xmls"
 cp -v $JENKINS_DIR/*.xml $BACKUP_DIR
