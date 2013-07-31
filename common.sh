@@ -6,7 +6,7 @@ REPO_HOSTNAME="bitbucket-jenkins-backup"
 REPO_URL="bitbucket.org"
 REPO_IDENTITYFILE="$JENKINS_DIR/.ssh/jenkins-bitbucket-backup-key"
 REPO_NAME="luisalima/shiftit-jenkins-config.git"
-GIT_REMOTE="git@bitbucket-jenkins-backup:$REPO_NAME"
+GIT_REMOTE="git@$REPO_HOSTNAME:$REPO_NAME"
 GIT_BRANCH="master"
 
 function echo_task {
