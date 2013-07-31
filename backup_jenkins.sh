@@ -18,7 +18,7 @@ do
 done
 
 echo_task "copying job configurations"
-for $DIR in `ls -p $JENKINS_DIR/jobs | grep "/" | xargs`
+for DIR in `ls -p $JENKINS_DIR/jobs | grep "/" | xargs`
 do
     mkdir -p $BACKUP_DIR/jobs/$DIR
     cp -v $JENKINS_DIR/jobs/$DIR/*.xml $BACKUP_DIR/jobs/$DIR
