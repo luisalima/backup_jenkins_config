@@ -33,3 +33,6 @@ cd $BACKUP_DIR
 git add .
 git commit -m "automated commit of jenkins configuration on [$(date)]."
 git push $GIT_REMOTE $GIT_BRANCH
+
+cd $OLDPWD
+alert "done! \o/"
